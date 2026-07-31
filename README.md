@@ -5,8 +5,10 @@
 ### 1
 **Linear** 
 - Static and Dynamic
+  
 **Static**
   - Arrays
+    
 **Dynamic**
 - Queues, Stack, Linked List
 
