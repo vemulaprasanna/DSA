@@ -1,0 +1,15 @@
+#Brute force approach
+arr=list(map(int,input("Enter elements: ").split()))
+target= int(input("Enter target: "))
+found = False
+for i in range(len(arr)):
+    for j in range(i+1, len(arr)):
+        if arr[i]+arr[j]==target:
+            print("Pair found at: ", i,j)
+            print("Pair Found are: ", arr[i],arr[j])
+            found = True
+            break
+    if found:
+        break
+if not found:
+    print("No pair found")

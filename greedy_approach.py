@@ -1,0 +1,9 @@
+#greedy approach
+coins = list(map(int,input("Enter elements: ").split()))
+amount= int(input("Enter target: "))
+print("Coins used: ")
+for coin in coins:
+    while amount>=coin:
+        print(coin, end=" ")
+        amount -= coin
+        
