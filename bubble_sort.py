@@ -1,0 +1,13 @@
+#Sorting
+# 1.Bubble sort
+# 2.Selection sort
+# 3.Insertion sort
+
+#1.Bubble sort
+arr= list(map(int,input("Enter elements: ").split()))
+n=len(arr)
+for i in range(n):
+    for j in range(0,n-i-1):
+        if arr[j]>arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+print(*arr)
